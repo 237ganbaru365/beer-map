@@ -1,7 +1,7 @@
-import CreateForm from "../components/Create/CreateForm";
+import CreateMap from "../components/Create/CreateMap";
 
 const CreatePage = () => {
-  return <CreateForm />;
+  return <CreateMap />;
 };
 
 export default CreatePage;

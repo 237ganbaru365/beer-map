@@ -11,7 +11,9 @@ const containerStyle = {
 //custom map style
 const options = {
   styles: MapStyle,
+  //ignore default map style
   disableDefaultUI: true,
+  clickableIcon: false,
   zoomControl: true,
 };
 

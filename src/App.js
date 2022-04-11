@@ -10,7 +10,6 @@ import AuthContext from "./store/auth-context";
 
 const App = () => {
   const authCtx = useContext(AuthContext);
-
   return (
     <Layout>
       <Switch>
@@ -23,7 +22,7 @@ const App = () => {
             <AuthPage />
           </Route>
         )}
-        <Route path="/map">
+        <Route path="/home">
           {authCtx.isLoggedIn && <MapPage />}
           {!authCtx.isLoggedIn && <Redirect to="/auth" />}
         </Route>
@@ -31,10 +30,10 @@ const App = () => {
           {authCtx.isLoggedIn && <FavoritePage />}
           {!authCtx.isLoggedIn && <Redirect to="/auth" />}
         </Route>
-        <Route path="/create">
+        {/* <Route path="/create">
           {authCtx.isLoggedIn && <CreatePage />}
           {!authCtx.isLoggedIn && <Redirect to="/auth" />}
-        </Route>
+        </Route> */}
         <Route path="*">
           <Redirect to="/" />
         </Route>

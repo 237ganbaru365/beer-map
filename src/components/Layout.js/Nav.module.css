@@ -29,9 +29,8 @@
 }
 
 .logo {
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: white;
-  margin: 0;
 }
 
 .header a {
@@ -62,4 +61,22 @@
 .header button:hover {
   background-color: #db8555;
   border-color: #db8555;
+}
+
+.only-sp {
+  display: none;
+}
+
+.only-pc {
+  display: block;
+}
+
+@media (max-width: 767px) {
+  .only-sp {
+    display: block;
+  }
+
+  .only-pc {
+    display: none;
+  }
 }

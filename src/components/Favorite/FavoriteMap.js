@@ -41,6 +41,7 @@ const FavoriteMap = () => {
           description={selected.description}
           geolocation={selected.geolocation}
           onCloseClick={selectedHandler}
+          store={selected}
         />
       ) : null}
     </Map>
